@@ -1,0 +1,15 @@
+#!/bin/bash
+
+ROOT_DIR="$(dirname "$0")/../"
+
+# loading configuration file
+source "$ROOT_DIR/config.conf"
+
+# loading functions
+source "$ROOT_DIR/functions.sh"
+
+# initial function to create database file
+init
+
+# enter the main menu
+menu
